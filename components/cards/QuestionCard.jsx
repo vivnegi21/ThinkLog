@@ -48,7 +48,7 @@ const QuestionCard =({isVisible,key,question,userId,onClose}) => {
                             <p className="text-left text-2xl">Tags:</p>
                             <p className='px-2 py-4 text-base text-left flex gap-2 shadow shadow-light-3'>
                                 {question.tags.map((tag,index)=>(
-                                <p id={index} className='max-md:text-xs  rounded-full whitespace-nowrap p-1 bg-navbar hover:bg-navbar/50 text-white'>{tag}</p>
+                                <p key={index} className='max-md:text-xs  rounded-full whitespace-nowrap p-1 bg-navbar hover:bg-navbar/50 text-white'>{tag}</p>
                                 ))}
                             </p>
                         </div>

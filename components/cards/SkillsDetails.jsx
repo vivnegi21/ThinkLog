@@ -5,10 +5,10 @@ const SkillsDetails = ({details}) => {
   return (
     <div className="flex flex-col gap-4 items-start shadow shadow-light-3 w-full min-h-full p-4">
       <p className='text-gray text-2xl text-center font-bold w-full font-serif'>Skills</p>
-      {Object.entries(details).map((value)=>{
+      {Object.entries(details).map((value,index)=>{
         return(
-          <div className="flex-col gap-2 items-start">
-            <p>{value[0]}</p>
+          <div className="flex-col gap-2 items-start" key={index}>
+            <p key={index}>{value[0]}</p>
             <div className='flex gap-3 items-start w-full flex-wrap'>
               {
                 Object.entries(value[1]).map((values, index)=>{

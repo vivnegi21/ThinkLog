@@ -30,7 +30,7 @@ const Navbar = () => {
               return (
                 <Link href={links.route} key={links.label} className={`flex flex-col items-center ${isActive && "text-highlight"}`}>
                   <Image src={links.imgURL} width={24} height={24} alt={links.label}/>
-                  <Image src='/assets/line.svg' width={24} height={1} className={`sm:hidden -mt-3  ${!isActive && "invisible"}`}/>
+                  <Image src='/assets/line.svg' alt='active_line' width={24} height={1} className={`sm:hidden -mt-3  ${!isActive && "invisible"}`}/>
                   <p className='max-sm:hidden'>{links.label}</p>
                 </Link>
               )

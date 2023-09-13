@@ -8,11 +8,11 @@ import { Button } from '../ui/button';
 import Image from 'next/image'
 
 const SearchBar = ({routeType}) => {
-    const router = useRouter();
     const [title,setTitle]=useState('');
     const [difficulty,setDifficulty]=useState('');
     const [tags,setTags]=useState('');
-
+    const router = useRouter();
+    
     useEffect(()=>{
         // console.log({title,difficulty,tags});
         const delayDebounceFn = setTimeout(() => {
