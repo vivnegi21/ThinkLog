@@ -2,9 +2,10 @@
 import React from 'react'
 import { Button } from '../ui/button';
 import Image from 'next/image'
-import { redirect } from 'next/navigation';
+import { useRouter } from 'next/navigation';
 
 const ProfileDetails = ({isSelf,userDetails}) => {
+  const router = useRouter();
 
   return (
     <div className='flex flex-col gap-6 p-5 shadow shadow-light-4 items-start justify-center'>
@@ -21,7 +22,7 @@ const ProfileDetails = ({isSelf,userDetails}) => {
       <p className=''>Email: {userDetails.email}</p>
       {/* edit BUtton */}
       {(isSelf)?(
-        <Button onClick={()=>redirect('/')} className='bg-navbar text-white font-bold w-full'>Edit Profile</Button>
+        <Button onClick={()=>{console.log('button pressed');router.push('/profile/edit')}} className='bg-navbar text-white font-bold w-full'>Edit Profile</Button>
       ):(<p></p>)
 
       }
