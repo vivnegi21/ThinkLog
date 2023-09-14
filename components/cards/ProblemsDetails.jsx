@@ -26,7 +26,7 @@ const ProblemsDetails = ({details}) => {
           onMouseLeave={()=>setCircleVal(details.len)}>
 
           <p className='text-md'>Medium Problems: {details.category['Medium']}</p>
-          <Progress value={details.category['Medium']*100/details.len} className="w-full border" />
+          <Progress value={details.category['Medium']*100/details.len} className="w-full" />
         </div>
 
         <div
