@@ -13,7 +13,7 @@ module.exports = {
       'white':'#ffffff',
       'blue': '#1fb6ff',
       'purple': '#7e5bef',
-      'navbar':'#db02db',     //#800080
+      'navbar':'#800080',     //#db02db
       'pink': '#ff49db',
       'orange': '#ff7849',
       'green': '#13ce66',
