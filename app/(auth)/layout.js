@@ -30,7 +30,7 @@ export default function RootLayout({children}) {
             <h2 className="text-2xl mt-3">Creating a <span className="text-navbar">centralized repository</span> for your DSA problems and solutions
             is an ideal way to consolidate and facilitate <span className="text-navbar">easy revision</span> in the future.</h2>
             <hr className=' w-11/12 border border-light-1'/>
-            <h2 className="text-xl mt-3"> Created By Vivek Negi</h2>  
+            <p className="italic mt-3"> Created By Vivek Negi</p>  
           </section>
           {/* RightLogInSection */}
           <section className=' max-md:mt-52'>{children}</section>
