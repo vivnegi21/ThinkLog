@@ -23,7 +23,10 @@ const Dashboard = ({key,index,question,userId}) => {
             <TableBody>
                 <TableRow className='w-full '>
                     <TableCell className='w-1/12'>{index+1}</TableCell>
-                    <TableCell className='w-1/3 flex-wrap'>{questionParsed.title}</TableCell>
+                    <TableCell className='w-1/3 flex-wrap'>
+                        <Link href={question.questionLink} target='_blank'>{questionParsed.title}
+                    </Link>
+                    </TableCell>
                     <TableCell className='w-full flex flex-row gap-1 h-fit flex-wrap items-center '>
                         {questionParsed.tags.map((tag,idx)=>{
                             if(idx<5) return(
