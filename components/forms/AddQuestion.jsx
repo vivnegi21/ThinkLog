@@ -30,7 +30,7 @@ const AddQuestion = ({userId,question}) => {
             hint: question.hint||"",
             difficulty: question.difficulty||"",
             solutionLink: question.solutionLink||"",
-            tags: question.tags||"",
+            tags: question.tags.toString()||"",
             createdBy: userId,
         }
     })
