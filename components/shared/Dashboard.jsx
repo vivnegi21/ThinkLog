@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '../ui/table';
 import { Button } from '../ui/button';
 import QuestionCard from '../cards/QuestionCard';
+import Link from 'next/link'
 
 const Dashboard = ({key,index,question,userId}) => { 
     const questionParsed=JSON.parse(question);
