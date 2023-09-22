@@ -5,7 +5,7 @@ export const navLinks = [
         label: "Home",
     },
     {
-        imgURL: "/assets/insert.png",
+        imgURL: "/assets/insert.svg",
         route: "/add",
         label: "Add",
     },
