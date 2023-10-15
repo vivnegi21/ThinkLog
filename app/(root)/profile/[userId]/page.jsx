@@ -69,18 +69,18 @@ const page = async ({params}) => {
 
     
     return (
-      <div className="flex  h-full  m-4 gap-1 max-md:flex-col ">
-      <div className="flex flex-col gap-5">
+      <div className="flex  h-full  m-4 gap-3 max-md:flex-col ">
+        <div className="flex flex-col gap-5">
         {/* Profile Detail */}
-        <ProfileDetails isSelf={selfProfile} userDetails={userDetails}/>
+          <ProfileDetails isSelf={selfProfile} userDetails={userDetails}/>
         {/* Problems Detail */}
-        <ProblemsDetails details={problemDetails} />
-      </div>
+          <ProblemsDetails details={problemDetails} />
+        </div>
 
-      <div className='w-full'>
+        <div className='w-full'>
         <SkillsDetails details={skills}/>
-      </div> 
-    </div>
+        </div> 
+      </div>
   )
 }
 
