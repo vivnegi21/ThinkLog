@@ -60,7 +60,7 @@ const SearchBar = ({routeType}) => {
                     
                     {/* Question Tags */}
                     <div className="flex flex-col gap-1 items-start max-md:w-full w-full">
-                        <p className="text-light-3">Question Title</p>
+                        <p className="text-light-3">Question Tags</p>
                         <Input placeholder='Search Tags' onChange={(e)=> setTags(e.target.value)} className='text-dark-1' />
                     </div>
                     {/* Reset Button */}
