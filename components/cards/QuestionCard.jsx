@@ -13,7 +13,7 @@ const QuestionCard =({isVisible,key,question,userId,onClose}) => {
     const hintPara = question.hint.split('\n');
 
     return (
-        <div className={`inset-0 fixed backdrop-blur-sm flex items-center max-md:-mt-12 justify-center w-screen max-h-screen`}>
+        <div className={`inset-0 fixed backdrop-blur-sm flex items-center max-md:-mt-12 justify-center w-screen max-h-screen z-10`}>
             <div className='flex flex-col w-5/6 h-5/6 max-md:h-full mx-2 items-center justify-center max-md:w-full'>
                 {/* Button */}
                 <div className='flex justify-end items-end w-full max-md:2-11/12'>
