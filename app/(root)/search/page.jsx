@@ -21,9 +21,9 @@ const page = async ({searchParams}) => {
   });   //userInfo._id
   
   return (
-    <div className='flex flex-row justify-center items-center w-full mt-4 max-md:flex-col-reverse gap-3 max-md:gap-6 '>    {/* w-4/6 when button pressed*/}
-        <div className='flex-col justify-start px-2 w-2/3 max-md:w-full'>
-        <Table>
+    <div className='flex flex-row items-start w-full mt-4 max-lg:flex-col-reverse gap-3 max-lg:gap-6 no-scrollbar '>    {/* w-4/6 when button pressed*/}
+        <div className='flex-col justify-start px-2 w-2/3 max-lg:w-full'>
+        <Table className=''>
             <TableHeader>
                 <TableRow>
                 <TableHead className="w-1/12 text-start">S.No</TableHead>
@@ -49,8 +49,10 @@ const page = async ({searchParams}) => {
       }
 
       </div>
-      <hr className='border border-white w-11/12 my-3 md:hidden'/>
-    <SearchBar routeType='search'/>
+      <hr className='border border-white w-11/12 my-3 lg:hidden m-auto'/>
+     
+        <SearchBar routeType='search'/>
+      
     </div>
   )
 }

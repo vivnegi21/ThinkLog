@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
             </div>
           </ClerkLoading>
           <ClerkLoaded>
-            <section className=''>{children}</section>
+            <section className='h-min-screen'>{children}</section>
           </ClerkLoaded>
         </main>
         </body>
